@@ -9,7 +9,7 @@ import { columns, DATA } from "./data";
 
 const TransactionDataTable = () => {
   const [select, setSelect] = useState([]);
-  console.log("select:", select);
+  console.log("select: Transections", select);
   return (
     <Grommet theme={grommet}>
       <Box align="center" pad="large">

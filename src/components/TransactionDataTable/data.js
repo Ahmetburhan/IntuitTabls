@@ -36,7 +36,6 @@ export const columns = [
     header: "Amount",
     render: (datum) => {
       // cases payment deposit invoice withdraw
-      console.log("datum", datum.reference);
       return (
         <Text
           color={

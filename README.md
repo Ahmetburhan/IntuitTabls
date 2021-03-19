@@ -1,2 +1,1 @@
-# AuthzDemo
-Created with CodeSandbox
+# Intuit Demo
