@@ -1,2 +1,2 @@
-# IntuitTabls
+# AuthzDemo
 Created with CodeSandbox
