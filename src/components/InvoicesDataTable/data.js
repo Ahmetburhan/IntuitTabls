@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Avatar } from "grommet";
-
+import moment from "moment";
 const amountFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
@@ -68,13 +68,13 @@ export const columns = [
   },
   {
     property: "createdAt",
+    render: (datum) => moment.unix(datum.createdAt).format("MM/DD/YYYY"),
     header: "Created At"
   },
   {
-    property: "transaction_date",
-    header: "Transaction Date",
-    // render: (datum) =>
-    //   datum.date && new Date(datum.date).toLocaleDateString("en-US"),
+    property: "paid_time",
+    header: "Paid",
+    render: (datum) => moment.unix(datum.paid_time).format("MM/DD/YYYY"),
     align: "end"
   },
   {
