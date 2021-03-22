@@ -24,6 +24,15 @@ export default function App() {
         <Grommet theme={grommet}>
           <Header background="dark-1" pad="medium">
             <Nav direction="row">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/summary">Summary</Link>
+              </li>
+              <li>
+                <Link to="/invoices">Invoices</Link>
+              </li>
               <Anchor label="Home" onClick={() => handleClick("/")} />
               <Anchor label="Summary" onClick={() => handleClick("summary")} />
               <Anchor
